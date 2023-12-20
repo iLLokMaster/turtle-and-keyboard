@@ -1,8 +1,8 @@
-- 👋 Hi, I’m @iLLokMaster
-- 👀 I’m interested in pyton and java
-- 📫 How to reach me: you can sand email on romapridieb@gmail.com
-
-<!---
-iLLokMaster/iLLokMaster is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+hi, this is my project in which you can use the turtle library in python to control a turtle drawing on canvas. The possibilities are presented below:
+(up, 'Up')
+(down, 'Down')
+(left, 'Left')
+(right, 'Right')
+(exit, 'q')
+(penUP(), 'w')
+(penDOWN(), 's')
