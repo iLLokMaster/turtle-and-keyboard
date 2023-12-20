@@ -1,0 +1,60 @@
+from turtle import *
+color = 1
+n = float(input("введите угол в градусах"))
+print(n)
+a = float(input("введите длину"))
+print(a)
+s = float(input("введите скорость от 1 до 10"))
+print(s)
+move = Turtle()
+bgColor = 1
+move.speed(s)
+def up():
+  move.forward(a)
+  print(position())
+def down():
+  move.back(a)
+  print(position())
+def left():
+  move.left(n)
+  print(position())
+def right():
+  move.right(n)
+  print(position())
+def exit():
+   #print(color)
+   global color
+   color += 1
+   if color == 1:
+       move.color('red')
+   elif color ==2:
+       move.color('blue')
+   elif color == 3:
+       move.color('yellow')
+   elif color == 4:
+       move.color('green')
+   elif color == 5:
+       move.color('#ba03fc')
+   else:
+       move.color('black')
+       color = 1
+def penUP():
+    move.penup()
+def penDOWN():
+    move.pendown()
+#onkey
+onkey(up, 'Up')
+onkey(down, 'Down')
+onkey(left, 'Left')
+onkey(right, 'Right')
+onkey(exit, 'q')
+onkey(penUP(), 'w')
+onkey(penDOWN(), 's')
+listen()
+mainloop()
+#отладка
+print(color)
+print(position())
+
+
+
